@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Countries</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<style>
+    body {
+        overflow-x: hidden;
+    }
+</style>
+
+<body class="bg-dark">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="container" style="margin-top: 20px;">
+                <div class="input-group mt-4">
+                    <input id="input-field" type="text" class="form-control" placeholder="Country Name ex: Bangladesh"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button onclick="searchButton()" class="btn btn-outline-secondary" type="button">Search</button>
+                </div>
+            </div>
+            <!-- Spinner  -->
+            <div id="spinner" class="container text-center mt-4" style="margin-top: 100px; display: none;">
+                <div class="spinner-grow text-info" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="visually-hidden"></span>
+                </div>
+            </div>
+            <!-- Country Details container  -->
+            <div id="details-container" class="row m-3 text-light" style="display: none;">
+                <div class="col">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-7" style="border-left: 2px solid rgb(245, 243, 243);">
+            <div class="container" style="margin-top: 20px;">
+                <h1 class="text-center my-2 text-light">All Countries</h1>
+                <div id="countriesContainer" class="row">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
